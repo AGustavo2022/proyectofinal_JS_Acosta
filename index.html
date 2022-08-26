@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <title>Proyecto Final | Calculadora de CF</title>
+</head>
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse d-flex flex-column justify-content-center" id="navbarNav">
+          <h1>Calculadora de Costo Financiero</h1>
+          <p>Calculado de Costo financiero de una compra realizada en cuotas con tarjeta de credito.</p>
+        </div>
+        <div id="clima"></div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="bg-secondary bg-gradient">
+
+      <div id="listadocompraDom" class="cardDom d-flex flex-wrap gap-5 justify-content-center text-center"></div>
+
+    </section>
+
+    <section class="container select">
+
+      <div class="container-fluid mb-5">
+
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+          <button id="refresh" type="button" class="btn btn-primary col-5">Nueva Compra</button>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <select id="seleProductos" class="form-select w-25" aria-label="Default select example">
+          <option selected>Seleccione el Producto Deseado</option>
+        </select>
+
+        <div class="form-floating col-1">
+          <input type="text" class="form-control" id="seleccion-cantidad">
+          <label for="floatingInput">Cantidad</label>
+        </div>
+
+        <button id="btnClick-Selecionar" type="button" class="btn btn-primary col-2">Seleccionar</button>
+
+      </div>
+
+      <div class="listaDOM">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Codigo</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">SubTotal</th>
+            </tr>
+          </thead>
+          <tbody id="nav-compra">
+            <tr></tr>
+          </tbody>
+        </table>
+
+        <div class="d-flex justify-content-center">
+
+          <button id="btnClick-Finalizar" type="button" class="btn btn-primary col-3 ">Finalizar Compra</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="calcCuotas bg-secondary bg-gradient">
+
+      <div class="container d-grid gap-5">
+
+        <div class="row">
+
+          <select id="cantCuotas" class="form-select w-25 ms-2" aria-label="Default select example">
+            <option selected>Cant Cuotas</option>
+            <option value="1">1 Cuotas</option>
+            <option value="3">3 Cuotas</option>
+            <option value="6">6 Cuotas</option>
+            <option value="9">9 Cuotas</option>
+            <option value="12">12 Cuotas</option>
+          </select>
+
+          <button id="btnClick" type="button" class="btn btn-primary col-2">Calcular</button>
+
+
+        </div>
+
+        <div class="input-group flex-nowrap w-25">
+          <span class="input-group-text">Efectivo o 1 sola cuota $</span>
+          <input id="subTotal-input" type="text" class="form-control">
+        </div>
+
+        <div class="row">
+
+          <div class="input-group flex-nowrap w-25">
+            <span class="input-group-text">Total a pagar $</span>
+            <input id="total-input" type="text" class="form-control">
+          </div>
+
+          <div class="input-group flex-nowrap w-25">
+            <span class="input-group-text">Cant Cuotas</span>
+            <input id="cuota-input" type="text" class="form-control">
+          </div>
+
+          <div class="input-group flex-nowrap w-25">
+            <span class="input-group-text">Imp de cuotas $</span>
+            <input id="cuotaImport-input" type="text" class="form-control">
+          </div>
+
+        </div>
+        
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>Acosta Gustavo_ Curso de Java Script, Comisión 40245</p>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./scripts/funciones_clases.js"></script>
+  <script src="./scripts/index.js"></script>
+  </body>
+
+  </html>

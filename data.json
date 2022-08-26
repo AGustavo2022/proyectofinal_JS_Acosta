@@ -1,0 +1,11 @@
+[
+    {"codigo":"001", "descripcion":"Producto A", "precio": 500},
+    {"codigo":"002", "descripcion":"Producto B", "precio": 900},
+    {"codigo":"003", "descripcion":"Producto C", "precio": 1000},
+    {"codigo":"004", "descripcion":"Producto D", "precio": 1100},
+    {"codigo":"005", "descripcion":"Producto E", "precio": 1300},
+    {"codigo":"006", "descripcion":"Producto G", "precio": 2000},
+    {"codigo":"007", "descripcion":"Producto H", "precio": 2500},
+    {"codigo":"008", "descripcion":"Producto I", "precio": 2900}
+    
+]
