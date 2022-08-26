@@ -174,6 +174,16 @@ butonCarrito.addEventListener('click', (e) => {
 
 });
 
+//Limpiar formulario.
+
+let limpiarForm = document.getElementById('btnClick-Selecionar');
+
+buttonSelecionar.addEventListener('click', limpiarFormulario);
+
+function limpiarFormulario() {
+
+    document.getElementById("miForm").reset();
+}
 
 //boton de finalizar compra.
 
