@@ -103,11 +103,9 @@ function handleBtnClick_Selecionar() {
 
         const carritoDom = carrito(elementoCarrito(productoSelecionado),cant);
 
-        carritoToStrinGOK.push(carritoDom);
+        carritoDomLocal.push(carritoDom);
 
-        console.log(carritoDom);
-
-        localStorage.setItem("caritoDeCompra", JSON.stringify(carritoToStrinGOK));
+        localStorage.setItem("caritoDeCompra", JSON.stringify(carritoDomLocal));
 
         //Crea lista de producto en el HTML.
 
@@ -244,8 +242,6 @@ function handleBtnClick() {
     if (flagbtn == true) {
 
         let sumaParcial = finalizarCompra;
-
-        console.log (sumaParcial);
 
         let total = suma(sumaParcial, costoFinanciero(sumaParcial, cantidadCuotaS));
 

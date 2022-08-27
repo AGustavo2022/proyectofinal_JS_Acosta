@@ -74,6 +74,5 @@ function costoFinanciero(sumaP, cuotas) {
     return costoFinancieroT;
 }
 
-
 const carritocompras = [];
-const carritoToStrinGOK = [];
+const carritoDomLocal = [];
